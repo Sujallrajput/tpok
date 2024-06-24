@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffe4e1;
+            text-align: center;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            color: #ff1493;
+            font-size: 1.5em;
+        }
+        .heart {
+            color: #ff69b4;
+            font-size: 2em;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        button {
+            margin-top: 1em;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey [Crush's Name]!</h1>
+    <p>Would you like to go on a date with me?</p>
+    <p class="heart">❤️</p>
+    <button onclick="alert('Yay! I can\'t wait! 😊')">Yes</button>
+</body>
+</html>
